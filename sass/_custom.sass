@@ -12,21 +12,30 @@ $color-second: #343a40
     background-color: $color-main !important
 
 .btn-main
-    width: 15%
+    width: 40%
     height: 50px
     background-color: $color-second
     border: none
     color: white
     transition: background-color 300ms
+    @media (min-width: 768px)
+        width: 15%
 
 .btn-main:focus
     outline: none
 
 .title
-    font-size: 60px
+    font-size: 40px
     font-family: 'Permanent Marker', cursive
     color: #343a40
     text-transform: uppercase
+    @media (min-width: 768px)
+        font-size: 80px
 
+.subtitle
+    font-size: 22px
+    font-family: 'Permanent Marker', cursive
+    @media (min-width: 768px)
+        font-size: 44px
 .title span
     font-family: 'Permanent Marker', cursive
