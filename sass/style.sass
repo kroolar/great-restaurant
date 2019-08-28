@@ -1,0 +1,99 @@
+@import 'custom'
+@import 'header'
+@import 'counters'
+@import 'menu'
+
+nav
+    width: 100%
+
+nav .nav-btn
+    position: fixed
+    top: 10px
+    right: 10px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    border: none
+    box-shadow: 0 0 4px 0 black
+    background-color: #EF0031
+    z-index: 10
+    &:focus
+        outline: none
+
+nav .nav-list
+    position: fixed
+    top: -100%
+    flex-direction: column
+    width: 100%
+    background-color: #EF0031
+    color: white
+    list-style-type: none
+    z-index: 5
+    transition: top 500ms
+    padding-top: 60px
+
+nav .nav-list.active
+    top: 0
+
+nav .nav-list-item
+    height: 60px
+    text-align: center
+    font-size: 30px
+    color: white
+
+nav a
+    color: white
+
+
+.bar-top,
+.bar-center,
+.bar-bottom,
+    width: 30px
+    height: 4px
+    margin: 2px
+    background-color: white
+
+
+
+.reservation
+    min-height: 80vh
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../img/restaurant-table.jpg')
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+
+// Footer
+footer
+    background-color: #141313
+    padding: 50px 0
+    i
+        width: 60px
+        height: 60px
+        border: 3px solid #343a40
+        color: #343a40
+        border-radius: 50%
+
+.footer .title
+    font-size: 30px
+
+.header
+    width: 100%
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../img/restaurant.jpg')
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+
+.header .row
+    min-height: 100vh
+
+
+.header h1
+    font-family: 'Permanent Marker', cursive
+.header h1 span
+    font-family: 'Permanent Marker', cursive
+.header h2
+    font-family: 'Permanent Marker', cursive

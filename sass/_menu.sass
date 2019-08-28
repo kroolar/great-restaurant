@@ -1,0 +1,20 @@
+.dish
+    position: relative
+    overflow: hidden
+    background-color: black
+
+.dish img
+    transition: opacity 500ms
+
+.dish:hover img
+    opacity: 0.2
+
+.dish-description
+    position: absolute
+    bottom: 0
+    left: -100%
+    transition: left 300ms
+
+.dish:hover .dish-description
+    left: 0%
+

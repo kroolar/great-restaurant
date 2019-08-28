@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+:root {
+    --spaceCadet: #1D3557;
+    --bgColor: #f8f9fa;
+    --honeyDew: #F1FAEE;
+    --primaryColor: #EF0031;
+    --fontColor: #343a40;
+}
+
+body {
+
+    background-color: var(--bgColor);
+}
+
+/* ### Navbar ### */
+.navbar {
+    background-color: var(--spaceCadet);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .navbar-brand {
+    display: block;
+    font-style: italic;
+    padding: 15px 35px;
+    background-color: var(--honeyDew);
+    color: var(--spaceCadet);
+}
+
+.navbar .nav-link {
+    color: #f15025;
+    font-size: 25px;
+    padding: 10px 25px;
+    margin: 0 10px;
+}
+
+.navbar .nav-link:hover {
+    color: black;
+    background-color: white;
+}
+
+
+/* ### Banner ### */
+
+
+
+/* #banner::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: black;
+    z-index: -1;
+    bottom: 0;
+    transform-origin: left bottom;
+    transform: skewY(3deg);
+} */
+
+
+
+/* .title h1::after {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: var(--primaryColor);
+} */
+
+
+
+/* ### Work ### */
+#work {
+    margin: 0 10%;
+}
+
+#work .work-title-text {
+    padding-right: 15px;
+    border-right: 3px solid black;
+}
+
+#work button {
+    border: 2px solid black;
+    margin: 5px;
+}
+
+/* .img-fluid {
+    width: 300px;
+    height: 200px;
+} */
+/* .zigzag {
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    background: linear-gradient(45deg, var(--bgColor) 10px, transparent 0) 0 5px, linear-gradient(-45deg, var(--bgColor) 10px, transparent 0) 0 5px;
+    background-color: transparent;
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    background-size: 20px 20px;
+} */
+
+.crew {
+    border: 4px solid var(--primaryColor);
+    border-radius: 3px;
+    box-shadow: 0 0 8px 0 gray;
+}
