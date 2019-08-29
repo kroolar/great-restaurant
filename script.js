@@ -31,4 +31,19 @@ $(document).ready(function () {
     $('nav .nav-btn').on('click', () => {
         $('nav .nav-list').toggleClass('active')
     })
+
+
+    const bgNav = () => {
+        if (pageYOffset >= 200) {
+            $('.nav-list').addClass('bg-main')
+            $('.nav-list').removeClass('bg-transparent')
+            console.log('dodano')
+        } else if (pageYOffset < 200 && window.innerWidth >= 768) {
+            $('.nav-list').addClass('bg-transparent')
+            $('.nav-list').removeClass('bg-main')
+        }
+    }
+    bgNav();
+
+    $(window).on('scroll', bgNav);
 });

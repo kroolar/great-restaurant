@@ -1,0 +1,67 @@
+nav
+    width: 100%
+    
+
+nav .nav-btn
+    position: fixed
+    top: 10px
+    right: 10px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    border: none
+    background-color: #EF0031
+    z-index: 10
+    &:focus
+        outline: none
+    @media (min-width: 768px)
+        display: none
+
+nav .nav-list
+    position: fixed
+    top: -100%
+    flex-direction: column
+    width: 100%
+    background-color: #EF0031
+    color: white
+    list-style-type: none
+    z-index: 5
+    transition: top 500ms, background-color 500ms
+    padding-top: 60px
+    @media (min-width: 768px)
+        left: 0
+        top: 0
+        height: 50px
+        display: flex
+        justify-content: flex-start
+        flex-direction: row
+        padding-top: 0
+        background-color: transparent
+
+nav .nav-list.active
+    top: 0
+
+nav .nav-list-item
+    height: 60px
+    text-align: center
+    font-size: 30px
+    color: white
+    @media (min-width: 768px)
+        height: 50px
+        font-size: 25px
+        line-height: 50px
+        padding: 0 20px
+        text-align: left
+nav .brand
+    flex: 1
+nav a
+    color: white
+    transition: color 300ms
+
+nav a:hover
+    color: #343a40
+    text-decoration: none
