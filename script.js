@@ -27,10 +27,13 @@ $(document).ready(function () {
         $grid.isotope('layout');
     });
 
+    const expandNav = () => {
+        $('nav .nav-list').toggleClass('active');
+    }
 
-    $('nav .nav-btn').on('click', () => {
-        $('nav .nav-list').toggleClass('active')
-    })
+    $('nav .nav-btn').on('click', expandNav);
+
+    $('nav a').on('click', expandNav)
 
 
     const bgNav = () => {
