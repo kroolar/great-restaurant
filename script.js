@@ -1,11 +1,7 @@
 $(document).ready(function () {
-    $('.navbar-toggler').html("<i class='fa fa-arrow-down fa-3x' style='color:#f15025'></i>")
 
-
-    // init Isotope
-    var $grid = $('.menu-dishes').isotope({
-        // options
-    });
+    // Init Isotope
+    var $grid = $('.menu-dishes').isotope({});
 
     function isotopeFilter(deafult) {
         var filterValue = $(this).attr('data-filter');
@@ -17,25 +13,31 @@ $(document).ready(function () {
         });
     }
 
+    // Domyślne wyszukanie wszystkich dań
     isotopeFilter('*');
 
 
-    // filter items on button click
+    // Filtrowanie po naciśnięciu przycisku
     $('.menu-btn-group').on('click', 'button', isotopeFilter);
 
+    // Isotope
     $grid.imagesLoaded().progress(function () {
         $grid.isotope('layout');
     });
 
+    // Rozsuwanie nawigacji
     const expandNav = () => {
         $('nav .nav-list').toggleClass('active');
     }
 
+    // Naciśnięcie przycisku rozwijania
     $('nav .nav-btn').on('click', expandNav);
 
+    // Naciśnięcie, któregoś elementu menu
     $('nav a').on('click', expandNav)
 
 
+    // Funkcja zmieniająca przeźroczystość nawigacji
     const bgNav = () => {
         if (pageYOffset >= 200) {
             $('.nav-list').addClass('bg-main')
@@ -46,7 +48,10 @@ $(document).ready(function () {
             $('.nav-list').removeClass('bg-main')
         }
     }
+
+    // Pierwsze ustawienie przeźroczystości nawigacji
     bgNav();
 
+    // Sprzwdzanie przeźroczystości nawigacji przy kazdym scrollowaniu
     $(window).on('scroll', bgNav);
 });
