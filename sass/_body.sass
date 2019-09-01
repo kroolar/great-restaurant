@@ -1,3 +1,62 @@
+// Pierwsza sekcja
+.header
+    width: 100%
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../img/restaurant.jpg')
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+
+    & .row
+        min-height: 100vh
+
+
+
+// Sekcja - About Us
+.about img
+    width: 75px
+    height: 75px
+
+
+
+// Sekcja - Counters
+.counters
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../img/xyz.jpg')
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+
+    & .row 
+        min-height: 80vh
+
+    & img
+        width: 200px
+        height: 200px
+
+
+
+// Sekcja - Menu
+.dish
+    position: relative
+    overflow: hidden
+    background-color: black
+
+    & img
+        transition: opacity 500ms
+
+    &:hover img
+        opacity: 0.2
+
+    & .dish-description
+        position: absolute
+        bottom: 0
+        left: -100%
+        transition: left 300ms
+
+    &:hover .dish-description
+        left: 0%
+
+
+
 // Sekcja - Our Staff
 .staff
     min-height: 80vh
@@ -5,3 +64,29 @@
     background-position: center
     background-size: cover
     background-repeat: no-repeat
+
+
+
+// Sekcja - Contact
+.contact
+    background-color: #141313
+    padding: 50px 0
+
+    & .title
+        font-size: 30px
+
+    & .day
+        width: 50%
+    
+    & i
+        width: 60px
+        height: 60px
+        border: 3px solid #343a40
+        color: #343a40
+        border-radius: 50%
+        transition: border 500ms, color 500ms
+
+    & a:hover i
+        color: white
+        border: 3px solid $color-main
+    

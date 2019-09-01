@@ -2,17 +2,21 @@
 $color-main: #ef0031
 $color-second: #343a40
 
+// Style uniwersalne
 *
     font-family: 'Lexend Deca', sans-serif
     scroll-behavior: smooth 
     text-decoration: none !important
 
+// Główny kolor tekstu
 .text-main
     color: $color-main
 
+// Główny kolor tła
 .bg-main
     background-color: $color-main !important
 
+// Główny styl przycisku
 .btn-main
     width: 40%
     height: 50px
@@ -23,10 +27,10 @@ $color-second: #343a40
     @media (min-width: 768px)
         width: 15%
 
-.btn-main:focus
-    outline: none
+    &:focus
+        outline: none
 
-// Title
+// Tytuł
 .title
     font-size: 40px
     font-family: 'Permanent Marker', cursive
@@ -35,10 +39,19 @@ $color-second: #343a40
     @media (min-width: 768px)
         font-size: 80px
 
+// Podtytuł
 .subtitle
     font-size: 22px
     font-family: 'Permanent Marker', cursive
     @media (min-width: 768px)
         font-size: 44px
+
+// Czcionka dla tytułów
 .title span
+    font-family: 'Permanent Marker', cursive
+.header h1
+    font-family: 'Permanent Marker', cursive
+.header h1 span
+    font-family: 'Permanent Marker', cursive
+.header h2
     font-family: 'Permanent Marker', cursive
